@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自分ビジネス実現プログラム｜あっきー × さおりん</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background:#FFFBF4; color:#33413F; font-size:19px; line-height:1.9;
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 20px 64px; }
+  h1 { font-size:31px; line-height:1.55; color:#25655E; text-align:center; }
+  h2 { font-size:26px; line-height:1.6; color:#25655E; text-align:center; margin:0 0 20px; }
+  h3 { font-size:21px; color:#25655E; margin:0 0 8px; }
+  section { padding:44px 0 8px; }
+  .eyebrow { text-align:center; color:#D77FA1; font-size:16px; letter-spacing:.12em; margin-bottom:10px; }
+  .hero { text-align:center; padding:52px 0 8px; }
+  .hero .gift { color:#D77FA1; font-size:18px; margin-bottom:14px; }
+  .hero .lead { margin:20px 0 6px; font-size:19px; }
+  .hero img.photo { width:210px; height:210px; object-fit:cover; border-radius:50%; margin:22px auto 6px; display:block; border:5px solid #F6DCE7; }
+  .keys { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin:18px 0 4px; }
+  .keys span { background:#EAF4F1; color:#25655E; border-radius:999px; padding:6px 16px; font-size:16px; }
+  .card { background:#fff; border:2px solid #F3E3D3; border-radius:18px; padding:22px 22px; margin:14px 0; }
+  .card.pink { background:#FDF3F7; border-color:#F6DCE7; }
+  .card.teal { background:#EFF7F4; border-color:#CFE8DF; }
+  ul.check { list-style:none; }
+  ul.check li { padding:6px 0 6px 34px; position:relative; }
+  ul.check li::before { content:"✓"; position:absolute; left:4px; color:#D77FA1; font-weight:bold; }
+  ul.worry { list-style:none; }
+  ul.worry li { background:#fff; border:2px solid #F3E3D3; border-radius:14px; padding:14px 18px; margin:10px 0; }
+  .center { text-align:center; }
+  .arrow { text-align:center; font-size:28px; color:#D77FA1; margin:2px 0; }
+  .month { background:#fff; border:2px solid #F3E3D3; border-radius:18px; padding:22px; margin:14px 0; }
+  .month .mhead { display:flex; align-items:baseline; gap:12px; margin-bottom:6px; }
+  .month .mnum { background:#25655E; color:#fff; border-radius:999px; padding:2px 14px; font-size:15px; white-space:nowrap; }
+  .month .mtitle { font-size:22px; color:#25655E; font-weight:bold; }
+  .cta { text-align:center; padding:40px 0 10px; }
+  .btn {
+    display:block; background:#3DA46A; color:#fff; text-decoration:none;
+    font-size:21px; font-weight:bold; border-radius:999px; padding:18px 24px; margin:16px auto 8px; max-width:440px;
+    box-shadow:0 4px 0 #2C7D50;
+  }
+  .cta-sub { text-align:center; font-size:16px; color:#66706E; }
+  .diag-q { background:#fff; border:2px solid #F3E3D3; border-radius:18px; padding:22px; margin:14px 0; }
+  .diag-q p { font-weight:bold; margin-bottom:12px; }
+  .diag-q button {
+    display:block; width:100%; text-align:left; font-size:18px; font-family:inherit;
+    background:#FDF3F7; border:2px solid #F6DCE7; border-radius:12px; padding:12px 16px; margin:8px 0; cursor:pointer; color:#33413F;
+  }
+  .diag-q button.sel { background:#25655E; color:#fff; border-color:#25655E; }
+  #diagResult { display:none; }
+  .faq dt { font-weight:bold; color:#25655E; margin:20px 0 6px; }
+  .faq dd { margin:0 0 8px; }
+  .support-num { display:flex; gap:14px; margin:16px 0; }
+  .support-num .n { background:#D77FA1; color:#fff; border-radius:50%; width:38px; height:38px; flex:0 0 38px; text-align:center; line-height:38px; font-weight:bold; }
+  footer { text-align:center; color:#8A9491; font-size:15px; padding:36px 0 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ヒーロー -->
+  <div class="hero">
+    <p class="gift">✦ あなたの経験が、誰かの希望になる</p>
+    <h1>「私の経験なんて…」が、<br>誰かに選ばれる仕事へ。</h1>
+    <img class="photo" src="photo.png" alt="秋山砂織（さおりん）">
+    <p class="lead">何を仕事にしたらいいか分からない状態から、<br>自分だけの商品をつくり、初開催まで実現する6か月。</p>
+    <p>自分ビジネス実現プログラム<br>あっきー × さおりん</p>
+    <div class="keys">
+      <span>想いを言葉に</span><span>商品をつくる</span><span>初開催まで伴走</span>
+    </div>
+  </div>
+
+  <!-- 共感 -->
+  <section>
+    <h2>こんな気持ち、抱えていませんか？</h2>
+    <ul class="worry">
+      <li>人の役に立つ仕事がしたい。でも何ができるか分からない</li>
+      <li>学んだことはあるのに、自分の商品にできない</li>
+      <li>AIやCanvaを開くと、手が止まってしまう</li>
+      <li>一人で発信・募集・Zoom開催まで進める自信がない</li>
+    </ul>
+    <p class="center">動けなかったのは、意志が弱いからではありません。</p>
+  </section>
+
+  <!-- 受講前→半年後 -->
+  <section>
+    <p class="eyebrow">BEFORE / AFTER</p>
+    <h2>受講前と、半年後のあなた</h2>
+    <div class="card">
+      <h3>受講前</h3>
+      <ul class="check">
+        <li>何が商品になるか分からない</li>
+        <li>強みを説明できない</li>
+        <li>パソコン画面で手が止まる</li>
+        <li>発信や募集が怖い</li>
+        <li>一人では先延ばしにしてしまう</li>
+      </ul>
+    </div>
+    <div class="arrow">⬇</div>
+    <div class="card teal">
+      <h3>半年後</h3>
+      <ul class="check">
+        <li>私の商品がある</li>
+        <li>誰に何を届けるか分かる</li>
+        <li>必要なツールを操作できる</li>
+        <li>講座を案内し、開催できる</li>
+        <li>開催後も改善していける</li>
+      </ul>
+    </div>
+    <p class="center">たった6か月で、ここまで変わる。</p>
+  </section>
+
+  <!-- 5つの強み -->
+  <section>
+    <p class="eyebrow">YOUR STRENGTHS</p>
+    <h2>あなたの経験のなかに眠る、5つの強み</h2>
+    <div class="card pink">
+      <ul class="check">
+        <li>乗り越えたこと</li>
+        <li>自然にできること</li>
+        <li>何度も頼まれること</li>
+        <li>夢中になれること</li>
+        <li>人より少し詳しいこと</li>
+      </ul>
+    </div>
+    <p class="center">あなたの「当たり前」が、誰かの道しるべになります。</p>
+  </section>
+
+  <!-- ロードマップ -->
+  <section>
+    <p class="eyebrow">6 MONTH ROADMAP</p>
+    <h2>「知っている」と「できる」の間を、<br>二人と一緒に越えていく。</h2>
+    <p class="center">見つける → 決める → つくる → 整える → 練習する → 届ける<br>いつかやりたいを、半年後の初開催へ。</p>
+
+    <div class="month">
+      <div class="mhead"><span class="mnum">1か月目</span><span class="mtitle">見つける</span></div>
+      <p>自分の経験と強みから、商品のタネを「見つける」。たった6か月。一つずつ、確実に。</p>
+      <ul class="check">
+        <li>経験・強みの棚卸しができる</li>
+        <li>頼まれごとや夢中になれることが整理できる</li>
+        <li>最初の商品のタネが見つかる</li>
+      </ul>
+    </div>
+
+    <div class="month">
+      <div class="mhead"><span class="mnum">2か月目</span><span class="mtitle">決める</span></div>
+      <p>届ける相手と商品のテーマを「決める」。あれもこれもではなく、最初の一歩に必要な軸を選びます。</p>
+      <ul class="check">
+        <li>商品のテーマが決まる</li>
+        <li>届けたい相手が明確になる</li>
+        <li>商品の大まかな構成が見えてくる</li>
+      </ul>
+    </div>
+
+    <div class="month">
+      <div class="mhead"><span class="mnum">3か月目</span><span class="mtitle">つくる</span></div>
+      <p>講座・LP・スライドを一緒に「つくる」。想いを言葉にし、形に整えます。</p>
+      <ul class="check">
+        <li>講座の内容が決まる</li>
+        <li>LP、告知文、スライドを一緒に作れる</li>
+        <li>「形になった」という感覚が持てる</li>
+      </ul>
+    </div>
+
+    <div class="month">
+      <div class="mhead"><span class="mnum">4か月目</span><span class="mtitle">整える</span></div>
+      <p>申込導線と開催環境を「整える」。当日を安心して迎えるために、導線と準備を整えます。</p>
+      <ul class="check">
+        <li>申込方法が決まる</li>
+        <li>Zoom・申込システムの操作が分かる</li>
+        <li>「本番に進める」という自信がつく</li>
+      </ul>
+    </div>
+
+    <div class="month">
+      <div class="mhead"><span class="mnum">5か月目</span><span class="mtitle">練習する</span></div>
+      <p>仲間と2人1組で「練習する」。小さな場で試してから、本番に向かいます。</p>
+      <ul class="check">
+        <li>模擬開催を体験できる</li>
+        <li>お客様の反応が分かる</li>
+        <li>改善点と自信を得られる</li>
+      </ul>
+    </div>
+
+    <div class="month">
+      <div class="mhead"><span class="mnum">6か月目</span><span class="mtitle">届ける</span></div>
+      <p>必要な人へ、商品を「届ける」。初開催はゴールではなく、次の商品へつながるスタートです。</p>
+      <ul class="check">
+        <li>初開催を自分の力でやり遂げる</li>
+        <li>お客様の声を受け取る</li>
+        <li>次の商品・開催への一歩が見える</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section>
+    <p class="eyebrow">AI AS A PARTNER</p>
+    <h2>AIは、あなたらしさを消すものではなく、<br>想いを形にする相棒</h2>
+    <div class="card">
+      <ul class="check">
+        <li>AI・Canvaを一緒に使い、自分の経験と言葉を中心に作る</li>
+        <li>AIに丸投げする講座ではありません</li>
+        <li>AIが苦手でも、画面を一緒に見ながら進められます</li>
+      </ul>
+    </div>
+    <p class="center">テクノロジーはあなたの個性を消しません。<br>むしろ、想いをもっと届けやすくする道具です。</p>
+  </section>
+
+  <!-- 講師紹介 -->
+  <section>
+    <p class="eyebrow">DOUBLE SUPPORT</p>
+    <h2>見つける人と、<br>できるまで隣にいる人。</h2>
+    <div class="card pink">
+      <h3>さおりん｜TECH &amp; CREATIVE</h3>
+      <p>分からないを置き去りにせず、完成まで一緒に進む人</p>
+    </div>
+    <div class="card teal">
+      <h3>あっきー｜BUSINESS DESIGN</h3>
+      <p>自分らしい仕事の「軸」を、一緒に探す人</p>
+    </div>
+    <div class="card">
+      <h3>01 価値へ翻訳</h3>
+      <p>経験・強み・ミッションを、誰かの役に立つ商品へ</p>
+      <h3>02 売れる形に設計</h3>
+      <p>実績をもとに、商品と集客を具体化</p>
+      <h3>03 画面を見て伴走</h3>
+      <p>AI・Canva・Zoom・申込まで、一緒に操作</p>
+    </div>
+  </section>
+
+  <!-- 安心の4ステップ -->
+  <section>
+    <p class="eyebrow">SAFE STEPS</p>
+    <h2>一人で本番にさせない、安心の4ステップ</h2>
+    <div class="card">
+      <ul class="check">
+        <li><strong>一緒に操作</strong>：画面を見ながら進める</li>
+        <li><strong>2人1組で練習</strong>：小さな場で試す</li>
+        <li><strong>クローズ開催</strong>：安心できる本番体験</li>
+        <li><strong>本番サポート</strong>：当日もそばにいる</li>
+      </ul>
+    </div>
+    <p class="center">「まだ自信がない」まま、準備できていないまま、<br>一人で舞台に立たせることはしません。</p>
+  </section>
+
+  <!-- サポート内容 -->
+  <section>
+    <p class="eyebrow">SUPPORT</p>
+    <h2>迷ったとき、止まったとき、<br>すぐに動ける環境があります。</h2>
+    <p>商品づくりだけで終わらず、発信・ツール操作・練習・開催当日・振り返りまで。「後で調べよう」と抱えたまま止まらなくていい。いつでも聞ける環境があります。</p>
+
+    <div class="support-num"><div class="n">1</div><div>
+      <h3>隔週・個別Zoom（6か月間）</h3><p>1回60分。状況に合わせた個別アドバイス。</p></div></div>
+    <div class="support-num"><div class="n">2</div><div>
+      <h3>月1回・ビジネス相談会（6か月間）</h3><p>課題を持ち寄り、仲間と一緒に前進する場。</p></div></div>
+    <div class="support-num"><div class="n">3</div><div>
+      <h3>Messenger Q&amp;A（1年間・無制限）</h3><p>小さな疑問を抱えたままにしない相談環境。</p></div></div>
+    <div class="support-num"><div class="n">4</div><div>
+      <h3>ツール操作サポート（1回60分 × 全4回）</h3><p>Canva・Zoom・申込システムを、画面を見ながら一緒に操作。</p></div></div>
+    <div class="support-num"><div class="n">5</div><div>
+      <h3>初開催・技術サポート</h3><p>Zoom入室から終了まで、技術面と気持ちを支える。</p></div></div>
+    <div class="support-num"><div class="n">6</div><div>
+      <h3>開催後の振り返り</h3><p>お客様の声から、改善点と次の一歩を見つける。</p></div></div>
+  </section>
+
+  <!-- 診断 -->
+  <section id="shindan">
+    <p class="eyebrow">CHECK</p>
+    <h2>今のつまずき診断（3問）</h2>
+    <p class="center">一人で何か月も悩む時間を、「できた」を重ねる時間へ。<br>今の現在地を、一緒に確認しましょう。</p>
+
+    <div class="diag-q" data-q="0">
+      <p>Q1. 今、いちばん止まっているところは？</p>
+      <button data-a="A">何を商品にできるか分からない</button>
+      <button data-a="B">内容はあるが、形にできない</button>
+      <button data-a="C">募集や開催の準備が不安</button>
+    </div>
+    <div class="diag-q" data-q="1">
+      <p>Q2. パソコン作業で、いちばん困ることは？</p>
+      <button data-a="A">何から調べればよいか分からない</button>
+      <button data-a="B">AIやCanvaで思う形にならない</button>
+      <button data-a="C">Zoomや申込設定が怖い</button>
+    </div>
+    <div class="diag-q" data-q="2">
+      <p>Q3. 個別相談で、まず整理したいことは？</p>
+      <button data-a="A">経験・強み・届けたい相手</button>
+      <button data-a="B">講座・LP・スライドの作り方</button>
+      <button data-a="C">発信・練習・初開催の進め方</button>
+    </div>
+
+    <div class="card teal" id="diagResult">
+      <h3 id="diagTitle"></h3>
+      <p id="diagText"></p>
+      <a class="btn" href="#consult">無料相談へ →</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <p class="eyebrow">FAQ</p>
+    <h2>よくある不安に、お答えします</h2>
+    <dl class="faq">
+      <dt>Q. まだ商品が決まっていなくても大丈夫ですか？</dt>
+      <dd>大丈夫です。経験や得意なことを棚卸しし、誰のどんな悩みに役立てられるかから一緒に探します。</dd>
+      <dt>Q. パソコンが苦手でもついていけますか？</dt>
+      <dd>はい。Google Chrome・Zoom・Canva・Messenger・申込システムまで、画面を一緒に見ながら操作します。</dd>
+      <dt>Q. 自信がなくても開催できますか？</dt>
+      <dd>いきなり一人で本番にはしません。一緒に操作、2人1組で練習、クローズ開催、本番サポートの順に段階を踏みます。</dd>
+      <dt>Q. 仕事や家庭と両立できますか？</dt>
+      <dd>隔週Zoomと非同期Q&amp;Aを使い、ご自身の状況に合わせて一歩ずつ進められます。</dd>
+    </dl>
+  </section>
+
+  <!-- 個別相談 -->
+  <section id="consult">
+    <p class="eyebrow">✦ YOUR EXPERIENCE IS A GIFT</p>
+    <h2>あなたの中にある経験は、<br>誰かにとって必要な贈り物です。</h2>
+    <p>個別相談（無料）では、今の状況・作りたいもの・パソコン操作の不安を伺い、どんな順番なら無理なく進められるかを一緒に整理します。料金や日程も、個別相談でご案内します。</p>
+    <div class="cta">
+      <a class="btn" href="#">まずは無料相談へ →</a>
+      <p class="cta-sub">無理な勧誘はしません。今の現在地の整理だけでも大丈夫です</p>
+    </div>
+  </section>
+
+  <footer>
+    自分ビジネス実現プログラム<br>
+    あっきー × さおりん<br>
+    あなたの経験を、必要な人へ。
+  </footer>
+
+</div>
+
+<script>
+  var answers = [null, null, null];
+  var results = {
+    A: { title: "個別相談で最初に整理したいのは「経験を商品にする軸」から",
+         text: "これまでの経験・強み・想いを棚卸しして、誰のどんな悩みに役立てられるかを見つけるところから始めると進みやすそうです。" },
+    B: { title: "個別相談で最初に整理したいのは「想いを見える形にする方法」から",
+         text: "AIで言葉と構成を作り、CanvaでLPやスライドに整える流れを一緒に確認すると、止まっていたものが形になりそうです。" },
+    C: { title: "個別相談で最初に整理したいのは「安心して初開催する準備」から",
+         text: "申込導線・Zoom設定・練習・本番サポートまでを順番に確認し、一人で抱えない開催方法を作るところから始めましょう。" }
+  };
+  document.querySelectorAll('.diag-q').forEach(function(q) {
+    var qi = parseInt(q.getAttribute('data-q'), 10);
+    q.querySelectorAll('button').forEach(function(b) {
+      b.addEventListener('click', function() {
+        q.querySelectorAll('button').forEach(function(x) { x.classList.remove('sel'); });
+        b.classList.add('sel');
+        answers[qi] = b.getAttribute('data-a');
+        if (answers.every(function(a) { return a !== null; })) {
+          var count = { A: 0, B: 0, C: 0 };
+          answers.forEach(function(a) { count[a]++; });
+          var best = answers[0];
+          ['A', 'B', 'C'].forEach(function(k) { if (count[k] > count[best]) best = k; });
+          document.getElementById('diagTitle').textContent = results[best].title;
+          document.getElementById('diagText').textContent = results[best].text;
+          var r = document.getElementById('diagResult');
+          r.style.display = 'block';
+          r.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
